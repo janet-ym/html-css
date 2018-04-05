@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css复习-盒模型</title>
+	<style>
+		div{
+			box-sizing: border-box; /* w3c写法 */
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+	常用的浏览器有哪些，它们的内核分别是什么？
+	答：IE浏览器：内核是trident  属于Microsoft;
+		Chrome：内核是webkit  属于Google;
+		Safari：内核是webkit  属于Apple;
+		Firefox：内核是Gecko  属于Mozilla;
+		Operal：内核是Presto  属于。
+	 -->
+	<!-- 页面中任何元素都可以看成一个盒子 -->
+	<!-- 边框/content/内边距(内填充)/ 外边距(外填充)/宽/高-->
+	<!-- 盒子模型有两种：
+		1、content-box(默认值)：width和height与padding和border互不干涉(这种情况下一般不会设置了宽高还设置padding)；
+		2、border-box：width和height包含content/padding/边框粗细，我们可以通过box-sizing来进行设置。
+	-->
+	<div></div>
+</body>
+</html>
