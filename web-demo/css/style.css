@@ -1,0 +1,64 @@
+ /*公共样式 */		/* 给文本设置样式（字体、颜色、对齐、方式、行高），都是给包裹文本的最里层的元素设置 */
+.content{width: 1000px; margin:0 auto;}
+/* 首页样式开始 */
+/* header */
+.header{width: 100%; height: 170px; background: url('../images/bj.jpg') repeat-x;}
+.header .logo{width: 330px; height: 164px; padding-top: 6px; float: left; margin-left: 80px;}
+.header .nav{width: 505px; height: ; margin-left: 35px; float: left;}
+.header .nav ul{width: 505px; height: 26px; margin-top:54px;}
+.header .nav ul li{width: 85px; height: 26px; margin-right: 20px; float: left; background-color: #505050; border-radius: 3px 0 3px 0;}
+.header .nav ul li.current{background-color: #fff;}
+.header .nav ul li.current a{color: #333;}
+.header .nav ul li a{width: 85px; height: 26px; display: block; line-height: 26px; font-family: '宋体'; font-size: 12px; color: #fff; text-align: center;}
+.header .nav p{width: 505px; height: 43px; margin-top: 32px; margin-left:45px; font-family: 'Cooper Std'; font-size: 36px; color: #1975cd;}
+.header .nav .mar0{margin-right: 0;}
+/* banner */
+.banner{width: 100%; height: 280px; background: #1875cd;}
+
+.banner .content{position: relative;}
+.banner .content h1{color: #fff; font-family: '微软雅黑'; font-size: 30px; position: absolute;}
+.banner .content h1.h11{left: 51px; top: 39px;}
+.banner .content h1.h12{left: 141px; top: 91px;}
+.banner .content h2.h21{left:39px; bottom: 69px;}
+.banner .content h2.h22{left: 39px; bottom: 45px;}
+.banner .content h2{color: #fff; font-weight: normal; font-family: '微软雅黑'; font-size: 16px; position: absolute; }
+
+/* product */
+.product{width: 100%; height: 260px; background:url('../images/prbg.png') repeat-x;}
+.product .pr_img{width: 338px; height: 218px; float: left; padding-top: 20px; padding-left: 25px;}
+.product .pr_ul{width: 637px; height: 260px; float: left;}
+.product .pr_ul ul{width: ; height: ; margin-top:36px; margin-left:69px;}
+.product .pr_ul ul li{width: 65px; height: ; float: left; margin-right: 65px;}
+.product .pr_ul ul li span{width: 65px; height: 18px;  display: block; font: normal normal 12px/1.5em '宋体'; text-align: center;}
+/* footer */
+.footer{width: 100%; height: 40px; background: #313131;}
+.footer p{width: 100%; height: 100%; text-align: center; color: #fff;  font: normal normal 12px/40px '宋体';}
+/* 首页样式结束 */
+/* 特价商品样式开始 */
+/* gg样式开始 */
+.gg{width: 100%; height: 70px; background: #1874cd;}
+.gg .content{height: 70px; background: url(../images/gg.jpg) no-repeat; font:bold 35px/70px '微软雅黑'; color: #fff; text-indent: 50px;}
+/* gg样式结束 */
+/* cp样式开始 */
+.cp{width: 100%; height: 572px; background: url(../images/cpbg.jpg) repeat-x;}
+.cp .content{overflow: hidden;}/* 解决向上外边距转移  */
+.cp .title{width: 100%; height: 41px; margin-top: 14px; margin-right: 34px;}
+.cp .title h1{width: 242px; height: 41px; line-height: 41px; float: right; background: url(../images/title.png) no-repeat; color: #fff; text-align: center;}
+.cplist ul{width: 100%; height: ;margin-top: 22px;}
+.cplist ul li{width: 865px; height: 137px; padding-left: 44px; padding-right: 81px; border-bottom: 1px dotted #939481;}
+
+.cplist .dl01{width: 100%; height: 100%;}
+.cplist .dl01 dd{width: 25%; height: 100%; float: left;}
+
+.cplist .dl01 dd.dl01_dd02 dl dd{width: 100%; color:#939481; font-size: 12px; font-family: '宋体'; line-height: 2em;}
+.dl01_dd02 dt{width: 100%; color: #1875cd; font-weight: bold; font-size: 14px; line-height: 2.5em;}
+.cplist .dl01 dd.zk{ color: #b5091d; font-size: 14px;  font-weight: bold; font-family: '宋体'; line-height: 9em;}
+.cplist .dl01 dd.jg{line-height: 3em; }
+.cplist .dl01 dd .h11{color: #000; font-size: 14px;  font-family: '宋体'; padding-left: 75px;}
+.cplist .dl01 dd .h22{color: #b5091d; font-size: 14px; font-family: '宋体'; padding-left: 75px;}
+.cplist .dl01 dd button{margin-left: 90px;}
+
+/*.dl01_dd03{width: 100%; height: 137px; line-height: 137px; font-size:14px; text-align: center; color: #b5091d; font-family: '宋体'; font-weight: bold;}
+.dl01_dd04 h1{}
+.dl01_dd04 h2{}
+*/
