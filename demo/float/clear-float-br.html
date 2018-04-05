@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>br标签清除浮动</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    .main div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    background: #fcf;
+    }
+    .footer {
+    width: 420px;
+    height: 100px;
+    background: red;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main">
+        <div>清除浮动方法大全</div>
+        <div>html学习</div>
+      <!-- br标签自带的属性 -->
+        <br clear="all" />
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
