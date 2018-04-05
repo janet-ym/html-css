@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>了不起的盖茨比</title>
+</head>
+<body>
+	<h1>了不起的盖茨比</h1>
+	<hr />         <!--<em>标签起强调作用，默认斜体，<strong>默认粗体<span>标签设置单独样式-->
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;1922年的春天，一个想成名名叫 <em>尼克▪卡拉威</em>  <span>（托比▪马奎尔饰）</span> 的作家，离开了美国西部，来到了纽约。那是一个道德感渐失，爵士乐流行，走私为王，股票飞涨的时代。为了追寻他的美国梦，他搬入纽约附近一海湾居住。</p>
+    <p>&nbsp;&nbsp;菲茨杰拉德，二十世纪美国文学巨臂之一，兼具作家和编剧双重身份。他以诗人的敏感和戏剧家的想象力为 <strong>“爵士乐时代”</strong> 吟唱华丽挽歌，其诗人和梦想家的气质亦为那个奢靡年代的不二注解。</p>
+    
+    
+    <hr />        <!--<q>短文本引用，不用加双引号，<blockquote>长文本引用，默认缩进样式-->
+    <p><q>&nbsp;&nbsp;&nbsp;&nbsp;小荷才露尖尖角，早有蜻蜓立上头。</q></p>
+    <p><blockquote>春眠不觉晓，<br />处处闻啼鸟。<br />夜来风雨声，<br />花落知多少。<br /></blockquote></p>
+    
+    
+    <hr />        <!--</hr>添加水平线，</br>换行，&nbsp表示空格-->
+    <code><p><br />&nbsp;&nbsp;&nbsp;&nbsp;JSP,mySQL,PS,DW</p></code>
+    <hr />
+    <pre>         <!--<code>显示一行源代码，<pre>显示一段源代码-->
+    #include<stdio.h>
+    void main()
+    {
+    	printf("hello wrld");
+    }
+    </pre>
+    <hr />
+    
+    
+    <!--<u1>默认每个li前面带一个圆点，<o1>默认每个li前面带序列标识（没有达到标签所要表达的效果）-->
+    <u1>
+    	<li>&nbsp;&nbsp;&nbsp;&nbsp;我的第一个列表信息</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;我的第二个列表信息</li>
+    </u1>
+    
+    <o1>
+    	<li>我的第一个列表信息</li>
+        <li>我的第二个列表信息</li>
+    </o1>
+    <!--注释完毕-->
+    
+    
+    <table summary = "描述表格的用途，在浏览器中不显示">
+    <table>
+    	<caption>好友列表（标题文本）</caption>
+        
+    <!-- <tr>代表表格的行数</tr>,<th>表格的头部，比如分类名称</th>,<td>表示表格的列</td> -->
+    <tr>
+    	<th>姓名</th>
+        <th>班级</th>
+        <th>年龄</th>
+    </tr>
+    
+    <tr>
+    	<td>杨敏</td>
+        <td>15级4G传习班</td>
+        <td>19岁</td>
+    </tr>
+    
+    <tr>
+    	<td>占小芳</td>
+        <td>15级4G传习班</td>
+        <td>20岁</td>
+    </tr>
+    
+    <tr>
+    	<td>杨子涵</td>
+        <td>15级计算机班</td>
+        <td>18岁</td>
+    </tr>
+    
+    <tr>
+    	<td>蔡中婧</td>
+        <td>15级计算机班</td>
+        <td>19岁</td>
+    </tr>
+    </table>
+    <br /><br />
+    
+    
+    <!--<a>标签，添加超链接-->
+    <a href="www.imooc.com" title="点击进入慕课网"> 点击这里 </a>
+    <br /><br />
+    
+    <!--新窗口打开链接信息-->
+    <a href="目标网址" target="_blank"> click here! </a>
+    <br /><br />
+     
+    <!--链接到Email地址-->
+    <a href="mailto:yy@imooc.com ?cc=xiaoming@imooc.com &bcc=xiaoyu@imooc.com@subject=主题 &body=邮件内容"> 发送 </a>
+    <br /><br />
+     
+    <!--<img src="图片地址" alt="下载失败时的替换文本" title="提示文本">-->
+    <img src="招聘简历.jpg">
+    <br /><br />
+    
+    <!--<address>地址标签-->
+    <address>江西省吉安市吉水县</address>
+    
+    <br /><br /><br /><br />
+    
+    
+    <!-- 表单标签：<form></form> -->
+    	<!--文本、密码输入框-->
+        <form>
+        	姓名：
+        	<input type="text" name="文本框名字" value="设置文本框默认值，起提示作用" />
+            密码：
+            <input type="password" name="文本框名字" /> 
+        </form>
+        <br /><br />
+        
+        <!--文本域，支持多行文本输入，<textarea></textarea>标签之间可以输入默认值
+        <textarea rows="行数" cols="列数"> 文本内容 </textarea>
+        
+        举例：-->
+        <form method="post" action="save.php">
+            	<label>联系我们</label> <br />
+                <textarea cols="50" rows="10">
+        在这里输入内容......</textarea>
+        </form>
+        <br /><br />
+        
+        <!--单选框和复选框，当设置 checked="checked"时，该选项被默认选中。同一组但旋钮中，name命名要一致
+        <input type="radio/checked" value="值" name="名称" checked="checked" />
+        
+        举例：-->
+        <form name="iform" method="post" action="sava.php">
+        	你是否喜欢旅游？<br />
+            <input type="radio" name="radiolove" value="喜欢" checked="checked" /> 喜欢
+            <input type="radio" name="radiolove" value="不喜欢" checked="checked" /> 不喜欢
+            <input type="radio" name="radiolove" value="无所谓" checked="checked" /> 无所谓
+            <br /><br />
+            你对哪些运动感兴趣？<br />
+            <input type="checkbox" name="checkbox1" value="跑步" /> 跑步
+            <input type="checkbox" name="checkbox2" value="打球" checked="checked" /> 打球
+            <input type="checkbox" name="checkbox2" value="登山" checked="checked" /> 登山
+            <input type="checkbox" name="checkbox2" value="健身"> 健身
+         </form>
+         <br /><br /><br /><br />  
+            
+         <!--下拉列表框，即可单选，又可复选
+         <option value="提交值"> 选项 </option>
+         
+         举例（实现单选）：-->
+         <form name="iform">
+         	<label> 爱好：</label>
+             <select>
+             	<option value="读书"> 读书 </option>
+                <option value="运动"> 运动 </option>
+                <option value="音乐"> 音乐 </option>
+                <option value="旅游"> 旅游 </option>
+                <option value="购物" selected="selected"> 购物 </option>
+             </select>
+         </form>
+         <br /><br />
+         
+         <!--举例（实现多选，在<select>标签中设置multiple="multiple"属性，在多选时按下ctrl键同时进行单击）：-->
+         <form name="iform">
+         	<label> 爱好：</label>
+             <select multiple="multiple">
+             	<option value="读书"> 读书 </option>
+                <option value="运动"> 运动 </option>
+                <option value="音乐"> 音乐 </option>
+                <option value="旅游"> 旅游 </option>
+                <option value="购物"> 购物 </option>
+             </select>
+         </form>
+         <br /><br />
+         
+         <!--使用提交按钮，提交数据：
+         语法：<input type="submit" value="提交">
+         
+         举例：-->
+         <form method="post" action="save.php">
+         	<label for="myname"> 姓名 </label>
+            <input type="text" value=" " name="myname" />
+            <input type="submit" value="提交" name="submitBtn" />
+         </form>
+         <br /><br />
+         
+         <!--使用重置按钮，把type设置为reset
+         语法：<input type="reset" value="重置" />
+         
+         举例：-->
+         <form method="post" action="save.php">
+         	<label for="myname"> 姓名： </label>
+            <input type="text" value=" " name="myname"/>
+            <input type="reset" value="重置" name="rexetBtn"/>
+         </form>    
+         </br></br>
+         
+         <!-- <label>标签，为鼠标用户改进可进性，
+         语法：<label for="控件id名称">，for属性应该与控件id属性相同
+         
+         举例： -->
+         <form>
+         	<label for="male"> 男 </label>
+            <input type="radio" name="gender" id="male" />
+            </br>
+            <label for="female"> 女 </label>
+            <input type="radio" name="gender" id="female" />
+            <label for="email"> 输入你的邮箱地址 </label>
+            <input type="email" id="email" placeholder="Enter email" />
+          </form>
+  
+</body>
+</html>
