@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>font-size的应用</title>
+	<style>
+		/* 设置字体大小font-size */
+		.z2{font-size: 30px;}
+		.z3{font-size:0.1cm;}
+		.z4{font-size:0.5mm;}
+		html{font-size: 20px;}
+		#body1{font-size: 80%;
+
+			/* 设置字体样式font-style */	
+			font-style: normal;		/* 正常显示 */
+			font-style: italic;		/* 斜体 */
+		/*	font-style: oblique;	 歪斜体 */
+			
+			/* 设置字体粗细font-weight */
+			font-weight: normal;	/* 正常粗细 */
+			font-weight: bold;		/* 粗体 */
+			font-weight: bolder;	/* 加粗体 */
+			font-weight: lighter;	/* 细体 */
+			}
+
+			div{	/* 设置字体变体font-variant */
+				font-variant: normal;	/* 正常字体 */
+				font-variant: small-caps;	/* 将小写字母设置成大写 */
+			}
+
+			/* 字体综合属性font的书写顺序：样式 粗细 变体 大小/行高 家族（字体类型） */
+			h1{font:italic bolder small-caps 20px/100px 'arial';}
+			/* 字体综合属性font的精简书写顺序：字体大小和字体家族，两者缺一不可 */
+	</style>
+</head>
+<body id="body1">
+ 	<h2 class="z1">使用绝对尺寸设置字号大小</h2>
+ 	<hr>
+ 	<p class="z2">这是30像素大小的文字</p>
+ 	<p class="z3">这是0.1厘米大小的文字</p>
+ 	<p class="z4">这是0.5毫米大小的文字</p>
+ 	<div>wh we ef ed dc cdcd cdc wd</div>
+ 	<h1>font:font-style|font-weight|font-variant|font-size/line height|font-family</h1>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动</title>
+	<style>
+		div{margin-top: 10px;}
+		.div1{width: 300px; height: 200px; background-color: pink; float: left; margin-right: 20px;}
+		.div2{width: 300px; height: 200px; background-color: lightblue; float: left;}
+		.div3{width: 300px; height: 200px; background-color: lightgreen; clear: both;}
+		.div4{width: 300px; height: 200px; background-color: yellow; float: left;}
+		.div5{width: 300px; height: 200px; background-color: lightgrey; float: left;}
+	</style>
+</head>
+<body>
+<!-- 给需要并排的盒子设置浮动 -->
+	<div class="div1">1</div>
+	<div class="div2">2</div>
+<!-- 浮动的盒子会脱离文档流，不占据文档的位置 -->
+	<div class="div3">3</div>
+	<div class="div4">4</div>
+	<div class="div5">5</div>
+<!-- 当某个块状元素显示出现问题，检查是否前面的块状元素进行了浮动，如果浮动了，则给出现问题的元素设定清除浮动 clear:both -->
+</body>
+</html>

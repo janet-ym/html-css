@@ -1,0 +1,33 @@
+body{font-size: 80px;}
+body{font-size: 50px !important;}
+body{font-size: 20px;}
+
+#p2{color: grey;}
+.p3{color: pink;}
+p{color: yellow;}
+/* 同一个元素设置同一个属性，遵循的原则是后来者居上 */
+/* 权重：权重越大，优先级越大（权重是按标签个数算的，不是按属性）
+	1、优先级楼里面权重最大的样式是：!impartant,也就是说加了!important的样式优先级最高;
+	2、优先级第二（权重是100）;
+	3、id选择器（权重是100）;
+	4、类选择器(权重是10);
+	5、标签选择器（权重是1）; */
+
+/* 
+	样式三种写法：
+		1、外链式(嵌套在head标签)	<link rel="stylesheet" href="a.css">
+		2、行内式(内嵌式，写在html标签里面)	<p style='font-size:20px;color:red'>p标签</p>
+		3、内部样式表：
+			<head>
+				<style>
+					body{font-size:20px;}	
+				</style>
+			</head>
+		4、导入外部样式表(不建议，有些浏览器不支持，写在CSS中或者直接写在style标签中，直接导入);
+			1、@import 'a.css';
+			2、<head>
+			   	<style style="text/css">
+					@import url(a.css);	
+				</style>
+			   </head>
+ */

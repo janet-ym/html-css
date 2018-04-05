@@ -1,0 +1,49 @@
+body div{background-color: yellow;}
+div{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	margin-bottom: 10px;
+	/* 向下的外边距是10px */
+/* 权重为1 */
+}
+
+body div.common{
+	background-color: lightgreen;
+/* 权重为12：（body：1   div：1    .common：10） */
+/* body div.common：表示body元素的后代元素div加了类名的值为common的元素 */
+}
+
+body.common{background-color: grey;}
+/* body.common：表示body元素加了值为common的class属性 */
+body .common{
+	background-color: lightblue;
+/* 权重为11：
+	body为1;
+	.common为10; */
+/* body .common：表示body的后代元素加了类名（class）的值为common的元素  */
+}
+.common{
+	background-color: pink;
+/* .common：表示所有的加了类名的值为common的元素  */
+}
+
+
+body div#div1{
+	background-color: cyan; /* cyan青色 */
+/* 权重为102  （body:1; div：1; #div1；100） */
+}
+#div1{
+	background-color: purple;
+/* 权重为100 */
+}
+div#div1{
+	background-color: orange;
+/* 权重为101  （div：1; #div1；100） */
+}
+
+
+#div1{
+	background-color: brown !important;	/* brown棕色 */
+/* 权重 最高 */
+}

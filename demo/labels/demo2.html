@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>横向菜单</title>
+	<style type="text/css">
+		td {font-size: 13px; color: #000000; line-height: 22px;}
+
+		div{/*设置层背景样式*/
+		background-color:#669933;text-align:center;position:absolute;z-index:2;display:none; }
+
+		a {font-size: 13px; color: #000000; text-decoration: none;
+		/*文字链接的背影样式*/
+		background-color:#dfdfdf;
+		width:100px;line-height:22px;text-align:center;border-bottom:1 #FFFFFF solid;}
+		a:hover {font-size: 13px; color: #FFFFFF;
+		/*鼠标在文字链接上时的文字背景样式*/
+		background-color:#cc0000;
+		width:100px;line-height:22px;text-align:center;}
+
+	</style>
+	<script language="JavaScript">
+		function show(d1){
+		document.getElementById(d1).style.display='block'; //显示层
+		}
+
+		function hide(d1){
+		document.getElementById(d1).style.display='none'; //隐藏层
+		}
+	</script>
+</head>
+<body>
+	<table width="610" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td><a href="#" onMouseMove="show('s1')" onMouseOut="hide('s1')">标题1</a></td>
+			<td><a href="#" onMouseMove="show('s2')" onMouseOut="hide('s2')">标题2</a></td>
+			<td><a href="#" onMouseMove="show('s3')" onMouseOut="hide('s3')">标题3</a></td>
+			<td><a href="#" onMouseMove="show('s4')" onMouseOut="hide('s4')">标题4</a></td>
+			<td><a href="#" onMouseMove="show('s5')" onMouseOut="hide('s5')">标题5</a></td>
+			<td><a href="#" onMouseMove="show('s6')" onMouseOut="hide('s6')">标题6</a></td>
+		</tr>
+		<tr>
+			<td><div id="s1" onMouseMove="show('s1')" onMouseOut="hide('s1')"><a href="#">链接1</a><br>
+				<a href="#">链接2</a><br>
+				<a href="#">链接3</a><br>
+				<a href="#">链接4</a><br>
+				<a href="#">链接5</a><br>
+				<a href="#">链接6</a><br>
+				<a href="#">链接7</a><br>
+				<a href="#">链接8</a></div>
+			</td>
+			<td><div id="s2" onMouseMove="show('s2')" onMouseOut="hide('s2')"><a href="#">链接1</A><br>
+				<a href="#">链接2</a></div></td>
+			<td><div id="s3" onMouseMove="show('s3')" onMouseOut="hide('s3')"><a href="#">链接1</A><br>
+				<a href="#">链接2</a><br>
+				<a href="#">链接3</a></div>
+			</td>
+			<td><div id="s4" onMouseMove="show('s4')" onMouseOut="hide('s4')"></div></td>
+			<td><div id="s5" onMouseMove="show('s5')" onMouseOut="hide('s5')"></div></td>
+			<td><div id="s6" onMouseMove="show('s6')" onMouseOut="hide('s6')"><a href="#">链接1</a><BR><a href="#">链接2</a><br><a href="#">链接3</a></div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

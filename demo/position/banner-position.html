@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>banner图</title>]
+	<style type="text/javascript">
+
+		/* 浏览器会给html标签渲染一些样式，比如图片下方的白色间隙、body有8个像素的外边距等等，这些默认样式会影响网页的布局，就得清除浏览器渲染的这些默认样式，清除默认样式叫做CSS Reset（样式重置） */
+
+		/* 清除块级元素的默认外边距和内边距的样式 */
+		body,p,ul,li,ol,dt,dd,dl,h1,h2,h3,h4,h5,h6,hr,textarea,form{margin:0; padding:0;}
+		/* 清除图片底部的间隙 */
+		img{vertical-align: middle; border:0;}
+		/* 清除列表默认样式 */
+		ul,ol{list-style: none;}
+		/* 清除下划线，清除颜色，设为块 */
+		a{text-decoration:none; color: #333;  display: block;}
+		/* 默认情况下字体大小是16px */
+		html,body{font-size:14px; font-family: 'arial','Verdana',"微软雅黑";}
+
+		.clear{clear:both; zoom: 1;}
+		.clear::after{content: ''; display: block; width: 0; height: 0; visibility: hidden; clear: both; zoom: 1;}
+
+
+		.banner{width: 520px; /*height: 280px;*/ margin:100px auto;
+				overflow: hidden; position: relative;
+				/*top:50px; right: 200px;*/
+			}
+		.banner ul{ width: 2600px; height: 280px; }
+		.banner ul li{width: 520px; height: 280px; float: left;
+				background: #333;}
+
+		.banner ol{width: 100px; height:22px;
+			background-color: rgba(255,255,255,.3);
+			border-radius:4px; padding: 0 5px;
+			position: absolute; left: 200px; bottom:20px;}
+		/*ol需要叠放在图片就要给ul做绝对定位，同时给ol的父元素做相对定位，A元素要叠放在B元素上，那就给A元素做绝对定位{position: absolute;},
+		给A元素的父元素C做相对定位{position: relative;}
+		原理：子绝父相*/
+
+		/*配合定位的五个属性
+			四个方向属性top/left/right/bottom：
+			1、给做了绝对的元素B加方向属性，表示B相对于C在上下左右四个方向的距离;
+			2、给做相对定位的C加方向属性，表示C相对于自己设置了方向属性;
+			3、层级属性：z-index; z-index的取值越大，优先级越高（能够被优先显示）;*/
+
+		/* 只有做了定位的元素，才能设置top\left\right\bottom\z-index属性，没做定位的元素设置以上五个属性是没有任何效果的 */
+		/* 做了绝对定位的元素，脱离了文档流，不占据文档里的位置 */
+		.banner ol li{width: 12px;height: 12px;background-color:#ccc;
+			float: left;margin:5px 3px;
+			border-radius:50%;}
+
+		.banner span{width: 30px; height: 45px; background-color:rgba(0,0,0,.3); font:20px/45px 'arial'; color: #fff; display: block;
+			text-align: center;}
+		.banner .left{position: absolute; left:0; top: 112px;}
+		.banner .right{position: absolute; right:0; top: 112px;}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<ul>
+			<li><img src="../img/banner01.jpg" alt=""></li>
+			<li><img src="../img/banner01.jpg" alt=""></li>
+			<li><img src="../img/banner01.jpg" alt=""></li>
+			<li><img src="../img/banner01.jpg" alt=""></li>
+			<li><img src="../img/banner01.jpg" alt=""></li>
+		</ul>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<span class="left">&lt;</span>
+		<span class="right">&gt;</span>
+	</div>
+</body>
+</html>

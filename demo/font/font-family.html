@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置多个字体</title>
+	<style>
+		h2{
+			font-family: '楷体' , '微软雅黑' ;
+			/* 用引号写字体类型 */
+			font-family: '微软雅黑' , '楷体';
+			/* 设定字体家族的时候，浏览器会根据能够读取的字体开始渲染字体，如果读到的第一个字体浏览器支持，那就显示成第一种字体;如果不支持，就往后读，直到支持为止 */
+			font-family: 'arial','impact','黑体' '宋体','微软雅黑';
+		}
+	</style>
+</head>
+<body>
+	<h2>用font-family属性设置字体</h2>
+	<hr>
+	<p>字体按照黑体、宋体、微软雅黑的顺序被浏览器读取</p>
+</body>
+</html>

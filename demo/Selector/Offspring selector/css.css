@@ -1,0 +1,36 @@
+body div{
+	width: 1000px;
+	height: 50px;
+	background-color: #690;
+	margin: 0 auto;	/* 使得一个盒子在水平方向上居中显示 */
+}
+body div ul{
+	width: 1000px;
+	height: 50px;
+	
+}
+body div ul li{
+	display: inline-block;	/* 把li由块级元素改成行内-块级元素 */
+	width: 100px;
+}
+body div ul li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;	/* 把文本下划线设置为无 
+}
+/* 未链接状态（默认：文字蓝色） */
+body div ul li a:link{
+	color: white;
+}
+/* 访问过的状态 （默认：文字紫色）*/
+body div ul li a:visited{
+	color: red;
+}
+/* 鼠标悬停的状态 （默认：无）*/
+body div ul li a:hover{
+	color: pink;
+}
+/* 激活的状态 :鼠标按下未松开的状态（默认：文字红色）*/
+body div ul li a:active{
+	color: yellow;
+}

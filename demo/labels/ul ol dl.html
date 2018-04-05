@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表标签</title>
+</head>
+<body>
+	
+	<!-- 无序列表 -->
+	<ul>
+		<li>首页</li>
+		<li>关于我</li>
+		<li>作品展示</li>
+		<li>联系我们</li>
+		<li>掌握技能</li>
+	</ul>
+	<!-- 有序列表(start="7"表示排序从7开始,reversed表示倒数排序) -->
+	<ol start="7" reversed="reversed">
+		<li>首页</li>
+		<li>关于我</li>
+		<li>作品展示</li>
+		<li>联系我们</li>
+		<li>掌握技能</li>
+	</ol>
+	<!-- type表示排序序号类型，可以是A，罗马数字I，数字1等等 。
+		 value表示排序序列类型所在的第多少个的名称-->
+	<ol type="A">
+		<li>首页</li>
+		<li>关于我</li>
+		<li>作品展示</li>
+		<li>联系我们</li>
+		<li>掌握技能</li>
+		<li value="10">第四项</li>
+	</ol>
+	<!-- 定义列表 -->
+	<dl>
+		<dt>购物指南</dt>
+		<dd>购物流程</dd>
+		<dd>会员介绍</dd>
+		<dd>生活旅行/团购</dd>
+		<dd>常见问题</dd>
+	</dl>
+	<!-- 嵌套列表 -->
+	<ul>
+		<li>首页</li>
+			<ul>
+				<li>首页</li>
+				<li>关于我</li>
+					<ul>
+						<li>首页</li>
+						<li>关于我</li>
+						<li>作品展示</li>
+						<li>联系我们</li>
+						<li>掌握技能</li>
+					</ul>
+				<li>作品展示</li>
+				<li>联系我们</li>
+					<dl>
+						<dd>购物流程</dd>
+						<dd>会员介绍</dd>
+						<dd>生活旅行/团购</dd>
+						<dd>常见问题</dd>
+					</dl>
+				<li>掌握技能</li>
+			</ul>		
+	</ul>
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>

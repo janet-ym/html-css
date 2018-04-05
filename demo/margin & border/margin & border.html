@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边距和边框的练习</title>
+	<style>
+		body{margin:0;}
+		.box img,.box1 img{width: 340px;height: 202px;
+				 vertical-align: middle;	/* vertical-align去掉图片底部三像素的间隙(top/middle/bottom),或者用display:block; */
+				} 
+		.box p,.box1 p{font:14px/45px '微软雅黑';margin:0 auto;;}
+		.box{margin-top: 30px; margin-left: 35px;
+			 border: 2px solid #b7b7b7; 
+			padding-top: 10px; padding-left: 32px;padding-bottom: 25px; padding-right: 34px;
+			width: 340px;height: 247px; background-color: #f2f2f2;
+			}
+
+		.box1{margin-top:51px; margin-left:55px; border:4px solid #424242;
+			padding-top:24px; padding-left: 15px; padding-bottom: 7px; padding-right: 47px;
+			width: 340px; height: 247px; background-color: #f2f2f2;
+			}  
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="1.jpg" alt="">
+		<p>普京获赠17联合会杯比赛用球 克里姆林宫内直接开踢</p>
+	</div>
+	<div class="box1">
+		<img src="1.jpg" alt="">
+		<p>普京获赠17联合会杯比赛用球 克里姆林宫内直接开踢</p>
+	</div>
+</body>
+</html>

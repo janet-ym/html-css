@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格嵌套</title>
+</head>
+<body>
+<!-- border="1":表格上下左右分别有一个像素的边框;
+	 cellspacing="15":单元格之间的间距是15px; 
+	 cellpadding="50":单元格衬距，表示单元格的内容与单元格的边框之间的距离;
+	 background="1.jpg":添加背景图片,tr,td都可以加;
+	 bordercolor="red":设置表格的边框颜色为红色-->
+	<table width="500" height="100" border="1" background="1.jpg">
+		<tr>
+			<th><font color="white">网页设计</font></th>
+			<th><font color="white">数据库开发</font></th>
+			<th><font color="white">程序设计</font></th>
+		</tr>
+		<tr>
+			<td><font color="white">Dreamweaver</font></td>
+			<td><font color="white">Access</font></td>
+			<td><font color="white">C++</font></td>
+		</tr>
+		<tr>
+			<td><font color="white">Frontpage</font></td>
+			<td><font color="white">SQL SERVER</font></td>
+			<td><font color="white">C#</font></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<table width="500" border="1">
+					<td width="200" border="1">
+						<table width="200" border="1">	<!-- 也可以设置为width:100%，表示相对于所在的父元素td为100% -->
+							<tr>
+								<td><br></td>
+							</tr>
+							<tr>
+								<td bgcolor="#00"><br></td>
+							</tr>
+							<tr>
+								<td bgcolor="#00"><font color="white">导航列表</font></td>
+							</tr>
+							<tr>
+								<td bgcolor="#00"><br></td>
+							</tr>
+							<tr>
+								<td><br></td>
+							</tr>
+						</table>
+					</td>
+					<td width="100"><font color="white">正文</font></td>
+					<td>
+						<table width="200" height="80" border="1">
+								<tr>
+									<td><font color="white">新闻链接</font></td>
+								</tr>
+								<tr>
+									<td><br><br><br><br><br></td>
+								</tr>
+
+						</table>
+					</td>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

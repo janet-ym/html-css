@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title文字排版练习</title>
+	<style>
+		/* 设置字符间距letter-spacing */
+		.p1{letter-spacing: 5px;}
+		.p2{letter-spacing: 15px;}
+		.p3{letter-spacing: normal;}
+
+		/* 设置单词间距word-spacing */
+		.p4{word-spacing: 5px;}
+		.p5{word-spacing: 15px;}
+		.p6{word-spacing: normal;}	
+
+		/* 添加下划线、删除线。上划线等效果 text-decoration*/
+		.p7{text-decoration: underline;}
+		.p8{text-decoration: line-through;}
+		.p9{text-decoration: overline;}
+		.p10{text-decoration: blink;}
+		.p11{text-decoration: none;}
+
+		/* 设置文本对齐方式text-align */
+		.p12{text-align: left;}
+		.p13{text-align: center;}
+		.p14{text-align: right;}
+		.p15{text-align: justify;}
+
+		/* 设置段落的首行缩进text-indent */
+		.p16{text-indent: 25%;}
+		.p17{text-indent: 30px;}
+		.p18{text-indent: 30pt;}
+
+		/* 设置行高line-height */
+		.p19{font-size:15px;line-height: 18px;}
+		.p20{font-size:15px;line-height: 150%;}
+		.p21{font-size:15px;line-height: 2;}
+
+		/* 设置字母大小写text-transform */
+		.p22{text-transform: uppercase;}
+		.p23{text-transform: lowercase;}
+		.p24{text-transform: capitalize;}
+		.p25{text-transform: none;}
+
+		/* 综合应用:字符间距为10px 单词间距为10px 添加下划线 文本对齐方式为居中对齐 段落首行缩进为50px 行高为20px 设置字母全部为大写; */
+		.a{letter-spacing: 10px; word-spacing: 10px; text-decoration: underline; text-align: center; text-indent: 50px;
+			line-height: 20px; text-transform: uppercase;
+		}
+	</style>
+
+</head>
+<body>
+	<p class="p1">这段文字的字符间距为5像素。</p>
+	<p class="p2">这段文字的字符间距为15像素。</p>
+	<p class="p3">这段文字的字符间距为正常。</p>
+
+	<p class="p4">Welcome to China..........设置单词间距为5像素。</p>
+	<p class="p5">Welcome to China..........设置单词间距为15像素。</p>
+	<p class="p6">Welcome to China..........设置单词间距为正常。</p>
+
+	<p class="p7">为这段文字添加下划线的效果。</p>
+	<p class="p8">为这段文字添加删除线的效果。</p>
+	<p class="p9">为这段文字添加上划线的效果。</p>
+	<p class="p10">为这段文字添加文字闪烁的效果。</p>
+	<p class="p11">这段文字为正常。</p>
+
+	<p class="p12">这段文本为左对齐的方式。</p>
+	<p class="p13">这段文本为居中对齐的方式。</p>
+	<p class="p14">这段文本为右对齐的方式。</p>
+	<p class="p15">这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。这段文本为两端对齐的方式。</p>
+
+	<p class="p16">这段文字的首行缩进为25%。这段文字的首行缩进为25%。</p>
+	<p class="p17">这段文字的首行缩进为30像素。这段文字的首行缩进为30像素。</p>
+	<p class="p18">这段文字的首行缩进为30点。这段文字的首行缩进为30点。</p>
+
+	<p class="p19">这段文字的行高为18像素这段文字的行高为18像素。</p>
+	<p class="p20">这段文字的行高为字号大小为15像素的150%，即行高为22.5像素。</p>
+	<p class="p21">这段文字的行高为字号大小为15像素的2倍，即行高为15*2=30像素。</p>
+
+	<p class="p22">所有的单词都大写----Welcome to China.</p>
+	<p class="p23">所有的单词都小写----Welcome to China.</p>
+	<p class="p24">所有的单词首字母都大写----Welcome to China.</p>
+	<p class="p25">所有的单词格式默认----Welcome to China.</p>
+
+	<p class="a">文字精细排版的属性综合应用————————Welcome to China</p>
+</body>
+</html>

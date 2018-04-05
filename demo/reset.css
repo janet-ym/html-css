@@ -1,0 +1,15 @@
+/* 浏览器会给html标签渲染一些样式，比如图片下方的白色间隙、body有8个像素的外边距等等，这些默认样式会影响网页的布局，就得清除浏览器渲染的这些默认样式，清除默认样式叫做CSS Reset（样式重置） */
+
+/* 清除块级元素的默认外边距和内边距的样式 */
+body,p,ul,li,ol,dt,dd,dl,h1,h2,h3,h4,h5,h6,hr{margin:0; padding:0;}
+/* 清除图片底部的间隙 */
+img{vertical-align: middle; border:0;}
+/* 清除列表默认样式 */
+ul,ol{list-style: none;}
+/* 清除下划线，清除颜色，设为块 */
+a{text-decoration:none; color: #333;  display: block;}
+/* 默认情况下字体大小是16px */
+html,body{font-size:14px; font-family: 'arial','Verdana','微软雅黑'}
+
+.clear{clear:both; zoom: 1;}
+.clear::after{content: ''; display: block; width: 0; height: 0; visibility: hidden; clear: both; zoom: 1;}

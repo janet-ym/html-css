@@ -1,0 +1,62 @@
+*{  
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	line-height: 50px;
+}
+body div{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+body div ul {
+	font-size: 0;
+	width: 1000px;
+	height: 50px;
+}
+
+body div ul li{
+	display: inline-block;
+	width: 100px;
+}
+
+body div ul li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.a{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #c37064;
+}
+.b{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #e37c34;
+}
+.c{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #efc9af;
+}
+.d{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #3cb5d1;
+}
+.e{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #eb7895;
+}

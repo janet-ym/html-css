@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style>
+		.box{/*border:2px solid red; padding:50px; */background-color: #580;}
+		.div1,.div2,.div3{width: 200px;height: 100px;float: left;}
+		.div1{background-color: lightblue;}
+		.div2{background-color: lightgreen;}
+		.div3{background-color: pink;}
+		/*.clear{clear:both;}*/
+		.overflow{overflow: auto; zoom: 1;} /* zoom：1处理IE浏览器的兼容性 */
+		.box::after{zoom:1; content:''; width: 0; height: 0; display: block; visibility: hidden; clear: both;}
+	</style>
+</head>
+<body>
+	<div class="box overflow">
+		<div class="div1">1</div>
+		<div class="div2">2</div>
+		<div class="div3">3</div>
+		<!-- <div class="clear"></div> -->
+	</div>
+	<div class="box"></div>
+<!-- 没有设置父元素的高度，子元素浮动了，出现的问题如下：
+		1、父元素
+		1、给父元素添加新的子元素，应用clear：bo高度没撑起来;
+		2、边框没有正常显示;
+		3、外边距没有正常显示;
+		4、父元素的背景没有正常显示 -->
+<!-- 常用的三个解决办法：th（增加了很多余的空元素）;
+		2、给父元素.box设置overflow：auto（对SEO友好）/hidden(对SEO不太友好)（overflow超过的东西流出来，溢出，溢出的属性取值：auto（自动）、hidden（隐藏）、visible（可见））;
+		3、最佳解决方法：after方法，给父元素添加一个伪元素（原理类似于给box增加一个.clear的效果）
+		content:''; display:block; 对IE/firefox/chrom/opera不可缺少; visbility:hidden; 允许浏览器渲染它，但是不显示出来 -->
+		<!-- 1、给兄弟元素清除浮动;
+			 2、给.box设定高度（子元素的高度变化，父元素高度也要更改，不够灵活） -->
+</body>
+</html>

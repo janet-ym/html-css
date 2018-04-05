@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置边框样式</title>
+	<style>	/* 引入内部样式 */
+		h2{
+			width: 300px;height: 80px;
+			border-top-style: none; /* 上边框样式无 */
+			border-left-style: solid;	/* 左边框样式为实线 */
+			border-right-style:dashed;	/* 右边框样式为虚线 */
+			border-bottom-style:dotted;	/* 下边框样式为点线 */
+			border-style: solid;	/* 上下左右边框样式都为实线 */
+			border-style: solid dashed;	/* 上下边框样式为实线，左右边框为虚线 */
+			border-style: solid dashed dotted;	/* 上边框样式为实线，左右为虚线，下边框为点线 */
+			border-style: solid dashed dotted double;	/* 上边框样式为实线，左边框双线，右边框为虚线，下边框为点线 */
+
+			border-top-width: 1px;
+			border-right-width: 5px;
+			border-bottom-width: 10px;
+			border-left-width: 15px;
+			border-width: 15px 10px 5px 3px;	/* 设置上右下左取值为:15px 10px 5px 3px; */
+
+			border-style: solid;
+			border-width: thick;
+			border-width: thin;
+			border-width: medium;	/* 边框粗细取值：thin（细）、thick（粗）、medium（中等，默认） */
+
+			border-top-color: teal;
+			border-color: aqua fuchsia lime;
+
+			border-top:5px double pink;
+			border-right:5px dotted green;
+			border-bottom: 5px dashed yellow;
+			border-left:5px solid orange;
+		}
+	</style>
+</head>
+<body>
+  <h2>设置边框样式</h2>
+  <hr>
+  <p>这段文字没有应用边框样式。这段文字没有应用边框样式。</p>
+  <p class="p1">这段文字应用了边框样式属性，设置上下边框为点线，左右边框为实线。</p>
+</body>
+</html>

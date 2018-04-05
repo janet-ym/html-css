@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>百度百科锚点</title>
+</head>
+<body bgcolor="pink" topmargin="50px" leftmargin="100px" rightmargin="50px" bottommargin="100px">
+
+
+		<h2><a href="#yu">语句</a>
+		<a href="#hs">&nbsp;&nbsp;函数</a>
+		<a href="#dx">&nbsp;&nbsp;对象</a><br>
+		<a href="#cylx">常用类型</a>
+		<a href="#mmxs">&nbsp;&nbsp;命名形式</a>
+		<a href="#zyy">&nbsp;&nbsp;作用域</a></h2>
+	
+
+	<a href="http://www.58pic.com/" target="_blank"><img src="0.jpg"></a>
+
+	<h1>相关概念</h1>
+	
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="yu"></a>语句</h3>
+	
+	<pre>
+	JavaScript程序是由若干语句组成的，语句是编写程序的指令。JavaScript提供了完整的基本编程语句，它们是：
+	赋值语句、switch选择语句、while循环语句、for循环语句、for each循环语句、do...while循环语句、break循
+	环中止语句、continue循环中断语句、with语句、try…catch语句、if语句（if..else，if…else if…）。</pre>
+
+	<a href="http://huaban.com/explore/banmiansheji/" target="_blank"><img src="1.jpg" align="right"></a>
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="hs"></a>函数</h3>
+	<pre>
+	函数是命名的语句段，这个语句段可以被当作一个整体来引用和执行。使用函数要注意以下几点：
+
+	1）函数由关键字function定义（也可由Function构造函数构造）。
+	2）使用function关键字定义的函数在一个作用域内是可以在任意处调用的（包括定义函数的语句前）；而用var关
+	键字定义的必须定义后才能被调用。
+	3）函数名是调用函数时引用的名称，区分大小写，调用函数时不可写错函数名。
+	4）参数表示传递给函数使用或操作的值，它可以是常量，也可以是变量，也可以是函数，在函数内部可以通过argu
+	ments对象（arguments对象是一个伪数组，属性callee引用被调用的函数）访问所有参数。
+	5）return语句用于返回表达式的值。
+	一般的函数都是以下格式：
+	1：function myFunction(params){
+
+	2：//执行的语句
+
+	3：}
+
+	函数表达式：
+
+	1：var myFunction=function(params){
+
+	2：//执行的语句
+
+	3：}
+
+	4：var myFunction = function(){
+
+	5：//执行的语句
+
+	6：}
+
+	7：myFunction();//调用函数
+
+	匿名函数，它常作为参数在其他函数间传递：
+
+	1：window.addEventListener('load',function(){
+
+	2：//执行的语句
+
+	3：},false);
+	</pre>
+
+	<a href="http://huaban.com/explore/banmiansheji/" target="_blank"><img src="2.jpg" align="right"></a>
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="dx"></a>对象</h3>
+	<pre>
+	JavaScript的一个重要功能就是面向对象的功能，通过基于对象的程序设计，可以用更直观、模块化和可重复使用
+	的方式进行程序开发。一组包含数据的属性和对属性中包含数据进行操作的方法，称为对象。比如要设定网页的背
+	景颜色，所针对的对象就是document，所用的属性名是bgcolor，如document.bgcolor="blue"，就是表示使背景的
+	颜色为蓝色。</pre>
+
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="cylx"></a>常用类型</h3>
+	<pre>
+	Object：对象
+
+	Array：数组
+
+	Number：数
+
+	Boolean：布尔值，只有true和false两个值，是所有类型中占用内存最少的
+
+	null：一个空值，唯一的值是null，表空引用
+
+	undefined：没有定义或赋值的变量
+
+	NaN：非数字类型
+	</pre>
+	
+	
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="mmxs"></a>命名形式</h3>
+	<pre>
+	一般形式是：
+
+	var <变量名表>;
+
+	其中，var是javascript的保留字，表面接下来是变量说明，变量名表是用户自定义标识符，变量之间用逗号分开。和
+	C++等程序不同，在javascript中，变量说明不需要给出变量的数据类型。此外，变量也可以不说明而直接使用。
+	</pre>
+	
+	<a href="http://huaban.com/explore/banmiansheji/" target="_blank"><img src="4.jpg" align="right"></a>
+	<h3>&nbsp;&nbsp;&nbsp;&nbsp;<a name="zyy"></a>作用域</h3>
+	<pre>
+	变量的作用域由声明变量的位置决定，决定哪些脚本命令可访问该变量。在函数外部声明的变量称为全局变量，
+	其值能被所在HTML文件中的任何脚本命令访问和修改。在函数内部声明的变量称为局部变量。只有当函数被执行时
+	，变量被分配临时空间，函数结束后，变量所占据的空间被释放。局部变量只能被函数内部的语句访问，只对该函
+	数是可见的，而在函数外部是不可见的。</pre>
+</body>
+</html>

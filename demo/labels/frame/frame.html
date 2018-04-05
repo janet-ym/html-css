@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>框架集</title>
+</head>
+<!-- rows="50%,50%"：将页面划分成两行，每行分别占用页面高度的50%;
+ 	 rows="30%,40%,30%"：将页面划分成三行，分别占页面的30%,40%,30%;
+ 	 rows="*,100":第一行的高度是整个页面的高度减去第二行的高度之后剩下的高度 -->
+<!-- <frameset rows="30%,40%,30%">
+		<frame src="http://www.baidu.com">
+		<frame src="http://www.sina.com"> （引用绝对路径）
+		<frame src="表单标签.html"> （引用相对路径）
+ 	<frameset> -->
+
+<!-- cols="50%,50%"：将页面划分成两列，每列分别占用页面宽度的50%;
+ 	 cols="30%,40%,30%"：将页面划分成三列，分别占页面的30%,40%,30%;
+ 	 cols="*,100":第一行的宽度是整个页面的宽度减去第二行的宽度之后剩下的宽度;
+ 	 noresize="noresize":无法调整框架的大小 ;
+ 	 frameborder="0":框架边框不显示;
+ 	 scrolling="0":在框架中不显示滚动条，有三个值：yes,no,auto(自动)；
+ 	 marginwidth="50":设置框架内容与框架左、右之间的宽度为50px;
+ 	 marginheight="50":规定框架内容与框架上、下之间的的宽度我50px;
+ 	 noframes>body：当浏览器不支持框架时的标签-->
+<frameset cols="200,400" rows="600,400">
+	<frame src="http://www.baidu.com" noresize="noresize" frameborder="0" scrolling="no" marginwidth="50" marginheight="50">
+	<frame src="http://www.taobao.cn">
+	<frame src="http://www.sina.com">
+	<frame src="http://www.baidu.com">
+	<noframes>
+		<body>
+			您的浏览器无法处理框架！
+		</body>
+	</noframes>
+</frameset>
+</html>

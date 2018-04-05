@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格嵌套</title>
+</head>
+<body>
+	<table width="600" border="1" bgcolor="#00CCFF">
+    <tr>
+      <th>网页设计</th>
+      <th>数据库开发</th>
+      <th>程序设计</th>
+   <!-- th:table head 表头文字默认居中显示 -->
+    </tr>
+    <tr>
+     <td>Dreamweaver</td>
+     <td>Access</td>
+     <td>C++</td>
+    </tr>
+    <tr>
+       <td>FrontPage</td>
+       <td>SQL SERVER</td>
+       <td>C#</td>
+    </tr>
+    <tr>
+      <td colspan="3">
+      <!--  colspan="3"跨三列 -->
+        <table width="600" border="1" background="file:///C|/Users/Administrator/Desktop/新建文件夹/ss.png" bgcolor="#003366" >
+          <tr>
+            <td>&nbsp;</td>
+            <td rowspan="3">正文</td>
+            <td>新闻链接</td>
+          </tr>
+          <tr>
+            <td>
+              <table bgcolor="#000000" width="100%"  border="1">
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>导航列表</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+              <!-- table的width="100%"宽度百分之百是相对于父元素td的宽度来算的 -->
+            </td>
+            <td rowspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <!-- 嵌套 -->
+      </td>
+    </tr>
+    <!-- tr:table rows -->
+  </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+	font-size: 30px;
+	/* 继承性
+			body的子元素都继承了文字属性 */
+}
+
+body{
+	font-size: 20px;
+	/* 层叠性
+			浏览器会以后面定义的body字体大小来渲染（表现） */
+}
+
+/* 标签选择器
+	html里面所有的元素都是标签选择器，比如说html、img、div、span
+ */
+
+p{color: red;}
+div{color: green;}
+h1{color: seagreen;}
+h2{color: grey;}
+h3{color: purple;}
+h4{color: pink;}
+
+/* 类选择器
+		语法：."class类名"+{属性：属性名;属性：属性名;}  */
+.common{
+	background-color: blue;
+	/* 通过类选择器增加了背景颜色的样式 */
+}
+
+/* id选择器
+	语法：#"id名"+ {属性：属性名;属性：属性名;} */
+#p1{
+	background-color: black;
+	/* 通过id选择器设置了P标签的背景颜色是黑色 */
+}
+
+/* 后代选择器
+	语法：祖先元素 后代元素（一个到多个）{属性：属性名; 属性：属性名;} */
+body h2{
+	background: red;
+}
+
+/* 伪类 
+a:link   (默认状态);
+a:visited   (访问过的状态);
+a:hover   (鼠标悬停的状态);
+a:active   (鼠标按下未松开的状态);
+*/
+p a:link{color: red;}
+p a:visited{color: green;}
+p a:hover{color: grey;}
+p a:active{color: yellow;}

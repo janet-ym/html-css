@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>JSP页面类的跳转</title>
+</head>
+<body>
+	<p>
+		<a href="#jsp1">JSP基本简介1</a><br>
+		<a href="#jsp2">JSP基本简介2</a><br>
+		<a>JSP强势弱势</a><br>
+		<a href="#jsqs">技术强势</a><br>
+		<a href="#jsqs1">技术强势1</a><br>
+		<a href="#jsrs">技术弱势</a><br>
+		<a href="#jsrs1">技术弱势1</a><br>
+	</p>
+
+	<h2><a name="jsp1"></a>JSP基本简介1</h2>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;JSP是由SunMicrosystems公司倡导、许多公司参与一起建立的一种动态技术标准。在传统的网页HTML文件（*.htm，*.html）中加入Java程序片段（Scriptlet）和JSP标签，<br>就构成了JSP网页java程序片段可以操纵数据库、重新定向网页以及发送E-mail等，实现建立动态网站所需要的功能。所有程序操作都在服务器端执行，网络上传送给客户端的仅<br>是得到的结果，这样大大降低了对客户浏览器的要求，即使客户浏览器端不支持Java，也可以访问JSP网页。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;JSP全名为Java Server Pages，其根本是一个简化的Servlet设计，他实现了Html语法中的java扩张（以 <%， %>形式）。JSP与Servlet一样，是在服务器端执行的。通常返<br>回给客户端的就是一个HTML文本，因此客户端只要有浏览器就能浏览。Web服务器在遇到访问JSP网页的请求时，首先执行其中的程序段，然后将执行结果连同JSP文件中的HTML<br>代码一起返回给客户端。插入的Java程序段可以操作数据库、重新定向网页等，以实现建立动态网页所需要的功能。</p>
+	<h2><a name="jsp2"></a>JSP基本简介2</h2>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;
+JSP全名为Java Server Pages，中文名叫java服务器页面，其根本是一个简化的Servlet设计，它[1]  是由Sun Microsystems公司倡导、许多公司参与一起建立的一种动态网页<br>技术标准。JSP技术有点类似ASP技术，它是在传统的网页HTML（标准通用标记语言的子集）文件(*.htm,*.html)中插入Java程序段(Scriptlet)和JSP标记(tag)，从而形成JSP文件<br>，后缀名为(*.jsp)。 用JSP开发的Web应用是跨平台的，既能在Linux下运行，也能在其他操作系统上运行。
+它实现了Html语法中的java扩展（以 <%, %>形式）。JSP与Servlet<br>一样，是在服务器端执行的。通常返回给客户端的就是一个HTML文本，因此客户端只要有浏览器就能浏览。
+JSP技术使用Java编程语言编写类XML的tags和scriptlets，来封装产<br>生动态网页的处理逻辑。网页还能通过tags和scriptlets访问存在于服务端的资源的应用逻辑。JSP将网页逻辑与网页设计的显示分离，支持可重用的基于组件的设计，使基于Web<br>的应用程序的开发变得迅速和容易。 JSP(JavaServer Pages)是一种动态页面技术，它的主要目的是将表示逻辑从Servlet中分离出来。
+Java Servlet是JSP的技术基础，而且大型的<br>Web应用程序的开发需要Java Servlet和JSP配合才能完成。JSP具备了Java技术的简单易用，完全的面向对象，具有平台无关性且安全可靠，主要面向因特网的所有特点。
+</p>
+	<h2>JSP强势弱势</h2>
+	<h3><a name="jsqs"></a>技术强势</h3>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）一次编写，到处运行。除了系统之外，代码不用做任何更改。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）系统的多平台支持。基本上可以在所有平台上的任意环境中开发，在任意环境中进行系统部署，在任意环境中扩展。相比ASP的局限性JSP的优势是显而易见的。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（3）强大的可伸缩性。从只有一个小的Jar文件就可以运行Servlet/JSP，到由多台服务器进行集群和负载均衡，到多台Application进行事务处理，消息处理，一台服务器到无<br>数台服务器，Java显示了一个巨大的生命力。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（4）多样化和功能强大的开发工具支持。这一点与ASP很像，Java已经有了许多非常优秀的开发工具，而且许多可以免费得到，并且其中许多已经可以顺利的运行于多种平台<br>之下。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（5）支持服务器端组件。web应用需要强大的服务器端组件来支持，开发人员需要利用其他工具设计实现复杂功能的组件供web页面调用，以增强系统性能。JSP可以使用成<br>熟的JAVA BEANS 组件来实现复杂商务功能。</p>
+	<h3><a name="jsqs1"></a>技术强势1</h3>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）一次编写，到处运行。除了系统之外，代码不用做任何更改。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）系统的多平台支持。基本上可以在所有平台上的任意环境中开发，在任意环境中进行系统部署，在任意环境中扩展。相比ASP的局限性JSP的优势是显而易见的。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（3）强大的可伸缩性。从只有一个小的Jar文件就可以运行Servlet/JSP，到由多台服务器进行集群和负载均衡，到多台Application进行事务处理，消息处理，一台服务器到无<br>数台服务器，Java显示了一个巨大的生命力。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（4）多样化和功能强大的开发工具支持。这一点与ASP很像，Java已经有了许多非常优秀的开发工具，而且许多可以免费得到，并且其中许多已经可以顺利的运行于多种平台<br>之下。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（5）支持服务器端组件。web应用需要强大的服务器端组件来支持，开发人员需要利用其他工具设计实现复杂功能的组件供web页面调用，以增强系统性能。JSP可以使用成<br>熟的JAVA BEANS 组件来实现复杂商务功能。</p>
+
+	<h3><a name="jsrs"></a>技术弱势</h3>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+
+	<h3><a name="jsrs1"></a>技术弱势1</h3>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（1）与ASP也一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;（2）Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。</p>
+</body>
+</html>

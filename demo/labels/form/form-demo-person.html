@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单练习</title>
+</head>
+<body bgcolor="990000">
+	<!-- form标签属性：
+			name="demo1"：告诉服务器发送数据的表单名字叫做demo1;
+			method="post"：表示安全性高，get表示安全性低;
+			action="s.aspx"：提交数据到s.aspx文件中;
+		input标签属性：
+			type="text"：文本框;
+			type="password"：密码类型;
+			name="demo2"：告诉服务器该输入框的名字叫demo2(name的值不能一样);
+			type="radio"：单选按钮(name的值要一样);
+			type="checkbox"：复选钮(name的值要一样);
+		select标签>option标签：
+			selected="selected"：设置下拉菜单的默认值;
+		label标签：不会向用户呈现任何效果，但是为鼠标改进了可用性。在label标签内点击文本，就会触发此控件;
+					for属性：把label绑定到另外一个元素（把for属性的值设置成相关元素id的属性值）;-->
+	<form name="demo1" method="post">
+		<table width="500" height="400" border="1">
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td  colspan="2"><font color="white">会员注册</font></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">用户名：</font></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">密码：</font></td>
+				<td><input type="password" maxlength="11" minlength="9"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">确认密码：</font></td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">性别：</font></td>
+				<td>
+					<font color="white">
+						<input type="radio" name="sex" value="男" id="nan"><label for="nan">男</label>
+						<input type="radio" name="sex" value="女" id="nv"><label for="nv">女</label>
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">爱好：</font></td>
+				<td>
+					<font color="white">
+						<input type="checkbox" name="体育">体育
+						<input type="checkbox" name="音乐">音乐
+						<input type="checkbox" name="文学">文学
+						<input type="checkbox" name="其它">其它
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">特长：</font></td>
+				<td>
+					<select name="techang">
+						<option value="看书" selected="selected"><font color="white">看书</font></option>
+						<option value="听歌"><font color="white">听歌</font></option>
+						<option value="上网"><font color="white">上网</font></option>
+						<option value="玩游戏"><font color="white">玩游戏</font></option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">联系电话：</font></td>
+				<td>
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">请输入留言：</font></td>
+				<td>
+					<textarea name="liuyan" cols="30" rows="10"></textarea>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>&nbsp;</td>
+				<td align="right"><font color="white">添加文件：</font></td>
+				<td>
+					<input type="file">
+				</td>
+			<tr>
+				<td>&nbsp;</td>
+				<td align="left"><input type="submit"></td>
+				<td align="left"><input type="reset"></td>
+			</tr>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

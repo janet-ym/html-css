@@ -1,0 +1,33 @@
+/* 设置body里面的文本的字体大小为40px */
+body{font-size: 50px; 	/* 字体大小：50p */
+	 font-family: 宋体;	 /* 字体类型：宋体 */
+	 color: white;		/* 字体颜色:白色 */
+	 background: blue;  /* 背景颜色：蓝色 */
+	 width: 500px; 	/*	 设置宽度:500px */
+	 height: 300px; 	  /*设置高度 ：300px */
+	 border: 5px solid #ccc; 	/* 背景边框是5px，实线，灰色 */
+	 text-align: center;	/* 文本对齐方式：居中 */
+	 cursor: pointer;}	/* 鼠标的形状：手掌 */
+
+/* 标签选择器 */
+div{font-size: 30px; color: #f00;}
+p{font-size: 20px;}
+b{font-size: 25px;}
+del{font-size: 15px;}
+
+
+/* 类选择器  
+		 语法："." + 类名{}
+		 添加了同样类名的元素，不能够使用该类名的样式。同一个元素可以设置一个或多个类名
+		 作用：使相同的元素体现出不同的视觉效果。 */
+.a{background-color: green;}
+.wid{width: 200px;}
+.hei{height: 50px;}
+
+
+/* id选择器 */
+#div1{background-color: red;}
+#div2{background-color: pink;}
+#div3{background-color: green;}
+#div4{background-color: purple;}
+#div5{background-color: grey;}
