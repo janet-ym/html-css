@@ -1,7 +1,7 @@
 # html-css
 Review notes about html/css
 
-<h1>As html:</h1>
+<h1>About html structure analysis:</h1>
 
   <h2>1. html document creation</h2>  
     <p> 1.文档类型声明：<!DOCTYPE html>这是HTML5标准的文档类型声明；  <br/>
