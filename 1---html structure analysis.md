@@ -2,6 +2,7 @@
 Review notes about html/css
 
 <h1><一>----------About html structure analysis:</h1>
+<h2> 页面三要素：标题(title)、关键词(meta)、描述(meta) </h2>
 
   <h2>1. html document creation</h2>  
     <p> 1.文档类型声明：<!DOCTYPE html>这是HTML5标准的文档类型声明；  <br/>
